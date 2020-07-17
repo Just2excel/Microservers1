@@ -19,3 +19,7 @@ workflows:
   main:
     jobs:
       - build-and-test
+      checkout:
+    post:
+        *****
+        - pip install -U pip setuptools virtualenv
