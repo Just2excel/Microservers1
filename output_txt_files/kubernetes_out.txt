@@ -1,1 +1,34 @@
-<paste log output from Kubernetes-mediated prediction, here>
+ NAME     READY   STATUS    RESTARTS   AGE
+mlcben   1/1     Running   0          76s
+
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 179-972-992
+[2020-07-17 14:32:30,981] INFO in app: JSON payload: 
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2020-07-17 14:32:30,993] INFO in app: Inference payload DataFrame: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2020-07-17 14:32:31,001] INFO in app: Scaling Payload: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2020-07-17 14:32:31,004] INFO in app: Prediction Returned Log: 
+[20.35373177134412]
+172.17.0.1 - - [17/Jul/2020 14:32:31] "POST /predict HTTP/1.1" 200 -
+[2020-07-17 14:34:15,421] INFO in app: JSON payload: 
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2020-07-17 14:34:15,431] INFO in app: Inference payload DataFrame: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2020-07-17 14:34:15,440] INFO in app: Scaling Payload: 
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2020-07-17 14:34:15,443] INFO in app: Prediction Returned Log: 
+[20.35373177134412]
+172.17.0.1 - - [17/Jul/2020 14:34:15] "POST /predict HTTP/1.1" 200 -
