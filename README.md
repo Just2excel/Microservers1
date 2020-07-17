@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![CircleCI](https://circleci.com/gh/Just2excel/Microservers1.svg?style=svg)](https://circleci.com/gh/Just2excel/Microservers1)
 
 ## Project Overview
 
